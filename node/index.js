@@ -10,6 +10,15 @@ const config = {
 
 const mysql = require('mysql')
 
+const connT = mysql.createConnection(config)
+const createTable = 'create table if not exists people (id int not null auto_increment, name varchar(255) not null, primary key(id));'
+connT.query(createTable, function(err, results, fields) {
+    if (err) {
+        console.log(err.message);
+    }
+});
+connT.end()
+
 app.get('/', (req, res) => {
     const conn = mysql.createConnection(config)
 
