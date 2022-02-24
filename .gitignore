@@ -1,1 +1,13 @@
 node/node_modules/
+*.frm
+mysql/mysql/
+mysql/sys/
+*.pem
+mysql/nodedb/
+mysql/auto.cnf
+mysql/ib_buffer_pool
+mysql/ib_logfile0
+mysql/ib_logfile1
+mysql/ibdata1
+mysql/ibtmp1
+mysql/performance_schema/db.opt
