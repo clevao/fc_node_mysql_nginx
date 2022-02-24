@@ -1,4 +1,8 @@
 ﻿# fc_node_mysql_nginx
+ 
+ Instructions to run this app:
+ - ```docker-compose up -d --build```
+ - access the app on a web browser: http://localhost:8080/
 
 If necessary, here is the sql code to create the people table:
 ```
